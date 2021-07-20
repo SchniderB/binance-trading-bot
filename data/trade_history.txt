@@ -1,0 +1,1 @@
+symbol:BTCUSDT	orderId:11115	orderListId:-1	clientOrderId:xxxxxxxxxx	price:45802.57000000	origQty:0.00059000	executedQty:0.00000000	cummulativeQuoteQty:0.00000000	status:NEW	timeInForce:GTC	type:LIMIT	side:BUY	stopPrice:0.00000000	icebergQty:0.00000000	time:1629982459643	updateTime:1629982459643	isWorking:True	origQuoteOrderQty:0.00000000
