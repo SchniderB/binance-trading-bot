@@ -69,7 +69,7 @@ The trading bot might not work if your starting base currency balance is inferio
 ### Configuration file
 The configuration file can be used with different parameters. The parameters should be separated from their values with a 
 tab. Here is how the parameters can be used:
-* `BENEFIT`: Floating point number of the percentage you want to buy your cryptocurrencies below their current price.
+* `BENEFIT`: Floating point (i.e. decimal number) of the percentage you want to buy your cryptocurrencies below their current price.
 * `RECOVER`: If set to `TRUE`, the file `data/trade_history.txt` is used to recover your trade history. It will also recover
   your base currency balance based on the file `data/USDT_balance.txt`. I recommend to use this argument only if you want to
   recover the data of a previous run of this trading bot.
@@ -100,15 +100,17 @@ multiplexer `Screen` for this purpose.
 
 ## Results
 ### Output files
+All the output files are saved in the folder `data`:
 - `$symbol_records.txt`: A file containing all decisions (`BUY` or `SELL`) and price statistics for each cryptocurrency 
-symbol. Saved in the folder `data`
+symbol
 - `trade_history.txt`: The most recent buy or sell trade for your selected cryptocurrencies will be saved in this file
 - `USDT_balance.txt`: Last base currency balance obtained by the trading bot
 
 ### Performances
-The algorithm seemed to work on Binance test net, but the low price buy trades would never be completed when the `BENEFIT` 
-threshold was set too high in `config.txt`. The optimal strategy for this algorithm would be to launch it at the beginning 
-of a bull run and to stop it before the end of the bull run and manually sell all the remaining cryptocurrencies.
+The algorithm seemed to work on Binance test net, but the low price buy trades would never be completed on the main net 
+when the `BENEFIT` threshold was set too high in `config.txt`. The optimal strategy for this algorithm would be to launch 
+it at the beginning of a bull run and to stop it before the end of the bull run and manually sell all the remaining 
+cryptocurrencies.
 
 ## Project Timeline
 - Start Date: April 2021
